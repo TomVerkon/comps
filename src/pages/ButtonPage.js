@@ -3,31 +3,30 @@ import Button from './../components/Button';
 
 function ButtonPage() {
 
-  const handleClick = () => {
-    console.log('Clicked');
-  };
+  const handleClick = () => { };
+
   return (
     <div>
       <div>
-        <Button primary outline rounded onClick={handleClick}>
+        <Button primary rounded onClick={handleClick}>
           <GoBell />
           Primary!
         </Button>
       </div>
       <div>
-        <Button secondary outline className='mb-2' >
+        <Button secondary className='mb-2' >
           <GoCloudDownload />
           Secondary!
         </Button>
       </div>
       <div>
-        <Button success outline onClick={handleClick}>
+        <Button success onClick={handleClick}>
           <GoDatabase />
           Success!
         </Button>
       </div>
       <div>
-        <Button warning outline >
+        <Button warning outline>
           Warning!
         </Button>
       </div>
